@@ -1,0 +1,70 @@
+VERI ON ISLEME
+#bir makine öğrenmesinin amacı genellebilir yapılar ortaya koymaktır.
+#Belirli olaylar gözlemlendiğinde belirli sonuçlar vermektir.
+
+#Veri temizleme (data cleaning)
+-Gürültülü veri
+-Eksik veri
+-Aykırı gözlem
+#Veri standardizasyonu
+- 0-1 dönüşümü
+- z skoruna dönüşümü
+- logaritmik dönüşüm
+#Veri indirgeme
+- Gözlem sayısının azaltılması
+- Değişken sayısının azaltılması
+#Değişken dönüşümleri
+- Sürekli değişkenlerde dönüşümler
+- Kategorik değişkenlerde dönüşümler
+
+#AYKIRI GÖZLEM
+Veride genel eğilim oldukça dışına çıkan ya da diğer gözlemlerden oldukça farklı olan gözlemlere aykırı gözlem denir.
+#Aykırı değer nedir?
+Aykırılığı ifade eden nümerik değere denir.
+#Aykırı gözlem nedir?
+Aykırık değeri barındıran gözlem birimine denir.
+
+#AYKIRI DEĞER NEYE SEBEP OLUR?
+Genellenebilirlik kaygısı ile oluşturulan kural setlerini ya da fonksiyonları yanıltır. Yanlılığa sebep olur.
+
+#NEYE GÖRE KİME GÖRE AYKIRI GÖZLEM?
+-Sektör bilgisi
+-Standart sapma yaklaşımı
+-Z skoru yaklaşımı
+-Boxplot -> IQR = 1,5x(Q3-Q1) 
+Alt esik değer= Q1-IQR
+Ust esik değer = Q3+IQR
+
+##EKSIK VERI
+
+Eksik veri silinmeden önce bunlara dikkat edilmesi gerekir!;
+1. Veri setindeki eksiliğin yapısal bir eksiklik olup olmadığının bilinmesi gerekir.
+2. NA her zaman eksiklik anlamına gelmez.
+3. Bilgi kaybı
+
+Eksik veri türünü tanımlamak;
+-Tümüyle raslantısal kayıp: Diğer değişkenlerden ya da yapısal bir problemden kaynaklanmayan tamamen rastgele oluşan gözlemler.
+-Raslantısal kayıp: Diğer değişkenlere bağlı olarak oluşabilen eksiklik türü.
+-Raslantısal Olmayan Kayıp: Göz ardı edilemeyecek olan ve yapısal problemler ile ortaya çıkan eksiklik türü.
+
+Eksik veriyi inceleme yöntemleri;
+-Görsel teknikler !!
+-Bağımsız iki örneklem t testi
+-Korelasyon testi
+-Little'nin MCAR testi !!
+
+
+!!Silme yöntemleri
+-Gözlem ya da değişken silme yöntemi
+-Liste bazında silme yöntemi(Listwise Method)
+-Çiftler bazında silme yöntemi(Pairwise Method)
+!!Değer atama yöntemleri
+-Ortanca, ortalama, medyan
+-En benzer birime atama(hot deck)
+-Dış kaynaklı atama
+!!Tahmine dayalı yöntemler -- Biraz daha ileri seviye yöntemler
+-Makine öğrenmesi
+-EM
+-Çoklu atama yöntemi
+
+Veri dönüşümü ve veri standardizasyonu ikisi de veri dönüştürmeyi ifâde eder, şöyle ki; değişken stan-.. değişkenin kendi içindeki varyans ve bilgi yapısı bozulmaz, belirli bir standarta oturtulur. Dönüştürme ise dönüştürülen bir değişkenin, taşındığı şekliyle kalamaması anlamına gelir. Yapı komple değiştirilmiş oluyor.
